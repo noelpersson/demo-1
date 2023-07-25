@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  @apply selection:bg-indigo-600/30 selection:text-indigo-50 scroll-smooth transition-colors duration-300 scrollbar-thin scrollbar-track-gray-200/40 scrollbar-thumb-gray-600/40 scrollbar-thumb-rounded-full selection:bg-stone-400;
+  max-width: 100vw;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+.button{
+  @apply w-full border-[1px] border-stone-300/30 rounded-2xl bg-white outline-none focus:ring-2 transition-all duration-200 ring-0 ring-stone-300/30 py-3 px-4 ;
+}
