@@ -35,7 +35,7 @@ export default function FormSection({}: Props) {
         //       setStatus("default");
         //     }, 3500);
       emailjs
-        .send("service_bmut4ji", "template_upmpch9", data, "TDG44JLNUvfBRcavi")
+        .send("service_bmut4ji", "template_3h4n2uw", data, "A984OhkhePAb0eGFY")
         .then(
           (result) => {
             setStatus("success");
