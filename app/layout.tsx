@@ -33,7 +33,6 @@ export default function RootLayout({
         {/* <NavbarBasicPreview /> */}
         <Header />
         {children}
-        <Footer />
       </body>
     </html>
   );

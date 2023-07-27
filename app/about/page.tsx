@@ -3,6 +3,7 @@ import FirstSection from "@/components/About us/FirstSection";
 import FourthSection from "@/components/About us/FourthSection";
 import SecondSection from "@/components/About us/SecondSection";
 import ThirdSection from "@/components/About us/ThirdSection";
+import Footer from "@/components/Footer";
 import React from "react";
 
 type Props = {};
@@ -25,6 +26,7 @@ export default function page({}: Props) {
       <FourthSection />
       {/* Fifth Section */}
       <FifthSection />
+      <Footer/>
     </main>
   );
 }

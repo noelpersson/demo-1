@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer";
 import FifthSection from "@/components/OurServices/FifthSection";
 import FirstSection from "@/components/OurServices/FirstSection";
 import FourthSection from "@/components/OurServices/FourthSection";
@@ -27,6 +28,9 @@ export default function page() {
       <SixthSection />
       {/* seventh Section */}
       <SeventhSection />
+
+      <Footer/>
+
     </main>
   );
 }
