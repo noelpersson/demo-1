@@ -12,7 +12,7 @@ export default function Header({}: Props) {
       as="nav"
       className={"w-full fixed bg-white/10 backdrop-blur-sm top-0 z-[100]"}
     >
-      {({ open }) => (
+      {({ open, close }) => (
         <motion.div
           viewport={{ once: true }}
           initial={{ opacity: 0 }}
@@ -34,36 +34,40 @@ export default function Header({}: Props) {
               {/* logo */}
               <Link
                 href={"/"}
+                onClick={() => close()}
                 className="flex flex-none items-center justify-center text-3xl font-bold text-slate-800 "
               >
                 brand
                 <div className="text-3xl text-white-500">.</div>
               </Link>
-
               {/* Desktop */}
               <div className="hidden grow select-none items-center justify-end gap-x-5 font-medium text-slate-800 md:flex lg:gap-x-12">
                 {/* links */}
                 <div className="flex items-center gap-x-3 lg:gap-x-6">
                   <Link
                     className="hidden flex-auto items-center truncate rounded-2xl py-3 px-4 transition-all duration-300 hover:bg-white-100 sm:flex"
+                    onClick={() => close()}
                     href="/"
                   >
                     Home
                   </Link>
                   <Link
                     className="hidden flex-auto items-center truncate rounded-2xl py-3 px-4 transition-all duration-300 hover:bg-white-100 sm:flex"
+                    onClick={() => close()}
                     href="/about"
                   >
                     About us
                   </Link>
                   <Link
                     className="hidden flex-auto items-center truncate rounded-2xl py-3 px-4 transition-all duration-300 hover:bg-white-100 sm:flex"
+                    onClick={() => close()}
                     href="/ourservices"
                   >
                     Our Services
                   </Link>
                   <Link
                     className="hidden flex-auto items-center truncate rounded-2xl py-3 px-4 transition-all duration-300 hover:bg-white-100 sm:flex"
+                    onClick={() => close()}
                     href="/contact"
                   >
                     Contact us
@@ -100,24 +104,28 @@ export default function Header({}: Props) {
                 <div className="flex flex-col space-y-1 pt-2 pb-3">
                   <Link
                     className="flex-auto items-center truncate rounded-2xl py-3 px-4 transition-all duration-300 hover:bg-white-100 sm:flex"
+                    onClick={() => close()}
                     href="/"
                   >
                     Home
                   </Link>
                   <Link
                     className="flex-auto items-center truncate rounded-2xl py-3 px-4 transition-all duration-300 hover:bg-white-100 sm:flex"
+                    onClick={() => close()}
                     href="/about"
                   >
                     About us
                   </Link>
                   <Link
                     className="flex-auto items-center truncate rounded-2xl py-3 px-4 transition-all duration-300 hover:bg-white-100 sm:flex"
+                    onClick={() => close()}
                     href="/ourservices"
                   >
                     Our Services
                   </Link>
                   <Link
                     className="flex-auto items-center truncate rounded-2xl py-3 px-4 transition-all duration-300 hover:bg-white-100 sm:flex"
+                    onClick={() => close()}
                     href="/contact"
                   >
                     Contact us
