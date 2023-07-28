@@ -25,19 +25,19 @@ export default function Header({}: Props) {
           }}
           className={`w-full ${
             open
-              ? "bg-indigo-400/20 backdrop-blur-sm transition-all duration-300"
+              ? "bg-white-400/20 backdrop-blur-sm transition-all duration-300"
               : "transition-all duration-300"
           }`}
         >
           <div className="mx-auto max-w-[2500px]">
-            <div className="mx-5 my-6 flex min-h-[48px] items-center md:mx-10 lg:mx-16 xl:mx-24">
+            <div className="mx-5 py-6 flex min-h-[48px] items-center md:mx-10 lg:mx-16 xl:mx-24">
               {/* logo */}
               <Link
                 href={"/"}
                 className="flex flex-none items-center justify-center text-3xl font-bold text-slate-800 "
               >
                 brand
-                <div className="text-3xl text-indigo-500">.</div>
+                <div className="text-3xl text-white-500">.</div>
               </Link>
 
               {/* Desktop */}
@@ -45,25 +45,25 @@ export default function Header({}: Props) {
                 {/* links */}
                 <div className="flex items-center gap-x-3 lg:gap-x-6">
                   <Link
-                    className="hidden flex-auto items-center truncate rounded-2xl py-3 px-4 transition-all duration-300 hover:bg-indigo-100 sm:flex"
+                    className="hidden flex-auto items-center truncate rounded-2xl py-3 px-4 transition-all duration-300 hover:bg-white-100 sm:flex"
                     href="/"
                   >
                     Home
                   </Link>
                   <Link
-                    className="hidden flex-auto items-center truncate rounded-2xl py-3 px-4 transition-all duration-300 hover:bg-indigo-100 sm:flex"
+                    className="hidden flex-auto items-center truncate rounded-2xl py-3 px-4 transition-all duration-300 hover:bg-white-100 sm:flex"
                     href="/about"
                   >
                     About us
                   </Link>
                   <Link
-                    className="hidden flex-auto items-center truncate rounded-2xl py-3 px-4 transition-all duration-300 hover:bg-indigo-100 sm:flex"
+                    className="hidden flex-auto items-center truncate rounded-2xl py-3 px-4 transition-all duration-300 hover:bg-white-100 sm:flex"
                     href="/ourservices"
                   >
                     Our Services
                   </Link>
                   <Link
-                    className="hidden flex-auto items-center truncate rounded-2xl py-3 px-4 transition-all duration-300 hover:bg-indigo-100 sm:flex"
+                    className="hidden flex-auto items-center truncate rounded-2xl py-3 px-4 transition-all duration-300 hover:bg-white-100 sm:flex"
                     href="/contact"
                   >
                     Contact us
@@ -77,7 +77,7 @@ export default function Header({}: Props) {
 
               {/* Mobile menu button*/}
               <div className="flex grow items-center justify-end text-center md:hidden">
-                <Disclosure.Button className="flex items-center justify-center rounded-md p-2 text-slate-800 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white hover:bg-indigo-400 hover:text-white">
+                <Disclosure.Button className="flex items-center justify-center rounded-md p-2 text-slate-800 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white hover:bg-white-400 hover:text-white">
                   {/* <span className="sr-only">Open main menu</span> */}
                   {open ? (
                     <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
@@ -89,35 +89,35 @@ export default function Header({}: Props) {
               {/* Mobile menu */}
             </div>
             <Transition
-              enter="transition duration-100 ease-out"
+              enter="transition duration-200 ease-out"
               enterFrom="transform -translate-x-24 opacity-0"
               enterTo="transform translate-x-0 opacity-100"
-              leave="transition duration-75 ease-out"
+              leave="transition duration-200 ease-out"
               leaveFrom="transform translate-x-0 opacity-100"
               leaveTo="transform -translate-x-24 opacity-0"
             >
               <Disclosure.Panel className="px-10 md:hidden">
                 <div className="flex flex-col space-y-1 pt-2 pb-3">
                   <Link
-                    className="flex-auto items-center truncate rounded-2xl py-3 px-4 transition-all duration-300 hover:bg-indigo-100 sm:flex"
+                    className="flex-auto items-center truncate rounded-2xl py-3 px-4 transition-all duration-300 hover:bg-white-100 sm:flex"
                     href="/"
                   >
                     Home
                   </Link>
                   <Link
-                    className="flex-auto items-center truncate rounded-2xl py-3 px-4 transition-all duration-300 hover:bg-indigo-100 sm:flex"
+                    className="flex-auto items-center truncate rounded-2xl py-3 px-4 transition-all duration-300 hover:bg-white-100 sm:flex"
                     href="/about"
                   >
                     About us
                   </Link>
                   <Link
-                    className="flex-auto items-center truncate rounded-2xl py-3 px-4 transition-all duration-300 hover:bg-indigo-100 sm:flex"
+                    className="flex-auto items-center truncate rounded-2xl py-3 px-4 transition-all duration-300 hover:bg-white-100 sm:flex"
                     href="/ourservices"
                   >
                     Our Services
                   </Link>
                   <Link
-                    className="flex-auto items-center truncate rounded-2xl py-3 px-4 transition-all duration-300 hover:bg-indigo-100 sm:flex"
+                    className="flex-auto items-center truncate rounded-2xl py-3 px-4 transition-all duration-300 hover:bg-white-100 sm:flex"
                     href="/contact"
                   >
                     Contact us
