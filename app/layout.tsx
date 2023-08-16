@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 import { DM_Sans, Montserrat } from "next/font/google";
 import NavbarBasicPreview from "@/components/navbar";
 import Head from "next/head";
-import Header from "@/components/Header";
+import Header from "@/components/Header copy";
 
 const mont = Montserrat({ subsets: ["latin"], display: "swap" });
 // const inter = DM_Sans({ subsets: ['latin'] })

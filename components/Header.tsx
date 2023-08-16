@@ -37,7 +37,7 @@ export default function Header({}: Props) {
                 onClick={() => close()}
                 className="flex flex-none items-center justify-center text-3xl font-bold text-slate-800 "
               >
-                brand
+                test
                 <div className="text-3xl text-white-500">.</div>
               </Link>
               {/* Desktop */}

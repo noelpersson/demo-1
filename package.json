@@ -10,8 +10,11 @@
   },
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
+    "@emotion/react": "^11.11.1",
     "@headlessui/react": "^1.7.15",
     "@heroicons/react": "^2.0.18",
+    "@mantine/core": "^6.0.19",
+    "@mantine/hooks": "^6.0.19",
     "@react-three/drei": "^9.80.0",
     "@react-three/fiber": "^8.13.6",
     "@types/node": "20.4.2",
