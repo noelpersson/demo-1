@@ -17,7 +17,7 @@ export default function FirstSection({}: Props) {
     <section className="w-full pt-12 min-h-[500px] bg-slate-100 mx-auto flex flex-col items-center jusitfy-start relative px-16 py-8">
       <div className="relative w-full flex items-center max-w-[2500px] mx-auto justify-center gap-x-2">
         {/* Title */}
-        <div className="mt-24 z-10 md:w-3/4 max-w-[1200px] gap-y-4 text-slate-800 md:font-medium font-bold text-5xl flex flex-col items-start text-start jusitfy-start">
+        <div className="mt-24 z-50 md:w-3/4 max-w-[1200px] gap-y-4 text-slate-800 md:font-medium font-bold text-5xl flex flex-col items-start text-start jusitfy-start">
           <div
             className={`tracking-tight flex flex-col items-start justify-start ${dm.className}`}
           >
@@ -33,7 +33,7 @@ export default function FirstSection({}: Props) {
         {/* image */}
         <Image
           src={image4.src}
-          className="-scale-x-100 drop-shadow-2xl !Z-30 w-full sm:w-[88%] max-w-[500px] max-h-[500px] absolute left-1/2 sm:translate-x-0 -translate-x-1/2 top-[15%] mx-auto sm:left-auto sm:right-[15%] sm:top-[5%]"
+          className="-scale-x-100 drop-shadow-2xl !z-40 w-full sm:w-[88%] max-w-[500px] max-h-[500px] absolute left-1/2 sm:translate-x-0 -translate-x-1/2 top-[15%] mx-auto sm:left-auto sm:right-[15%] sm:top-[5%]"
           alt={"heroBackground"}
           width={410}
           height={410}
