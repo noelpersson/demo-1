@@ -1,0 +1,212 @@
+'use client';
+import React, { useState } from 'react';
+import Link from 'next/link';
+import { motion } from 'framer-motion';
+
+const variants = {
+  open: { opacity: 1, y: 0 },
+  closed: { opacity: 0, y: '-5%' },
+};
+const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  return (
+    <header className={`flex items-center w-full bg-white`}>
+      <div className="container">
+        <div className="relative flex items-center justify-between -mx-4">
+          <div className="max-w-full px-7 w-60">
+            <a href="/#" className="block w-full py-5">
+              <img
+                src="https://cdn.tailgrids.com/1.0/assets/images/logo/logo.svg"
+                alt="logo"
+                className="w-full"
+              />
+            </a>
+          </div>
+          <button
+            className={`relative group ${isOpen ? 'active' : ''}`}
+            onClick={() => setIsOpen(!isOpen)}
+          >
+            <div className="relative flex overflow-hidden items-center justify-center rounded-full w-[50px] h-[50px] transform transition-all  ring-0 ring-gray-300 hover:ring-8 group-focus:ring-4 ring-opacity-30 duration-200 shadow-md">
+              <div className="flex flex-col justify-between w-[20px] h-[20px] transform transition-all duration-300 origin-center overflow-hidden">
+                <div
+                  className={`bg-black h-[2px] w-7 transform transition-all duration-300 origin-left ${
+                    isOpen ? 'rotate-[42deg]' : ''
+                  }`}
+                ></div>
+                <div
+                  className={`bg-black h-[2px] w-1/2 rounded transform transition-all duration-300 ${
+                    isOpen ? '-translate-x-10' : ''
+                  }`}
+                ></div>
+                <div
+                  className={`bg-black h-[2px] w-7 transform transition-all duration-300 origin-left ${
+                    isOpen ? '-rotate-[42deg]' : ''
+                  }`}
+                ></div>
+              </div>
+            </div>
+          </button>
+          <motion.nav
+            initial="closed"
+            animate={isOpen ? 'open' : 'closed'}
+            variants={variants}
+            id="navbarCollapse"
+            className={`position: absolute right-4 z-1000 top-full w-full max-w-[290px] rounded-lg bg-white py-5 px-6 shadow lg:static lg:block lg:w-full lg:max-w-full lg:shadow-none ${
+              !isOpen && 'hidden'
+            } `}
+          >
+            <div className="mt-0 grid grid-cols-1 gap-0">
+              <div className="relative group ">
+                <Link
+                  href="/"
+                  className="text-black tracking-wider font-medium hover:text-yellow-400 cursor-pointer transition duration-500"
+                >
+                  Home
+                </Link>
+              </div>
+              <div>
+                <p className=" tracking-wider text-gray-500 font-bold ">SEO</p>
+                <ul className="mt-0 text-[15px]">
+                  <li>
+                    <a
+                      href="#"
+                      className="text-gray-600 hover:text-gray-800 py-1 block font-normal"
+                    >
+                      Sökoptimering
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      className="text-gray-600 hover:text-gray-800 py-1 block font-normal"
+                    >
+                      Lokal sök optimering
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      className="text-gray-600 hover:text-gray-800 py-1 block font-normal"
+                    >
+                      Analys och spårning
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      className="text-gray-600 hover:text-gray-800 py-1 block font-normal"
+                    >
+                      On page SEO
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      className="text-gray-600 hover:text-gray-800 py-1 block font-normal"
+                    >
+                      Off page SEO
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      className="text-gray-600 hover:text-gray-800 py-1 block font-normal"
+                    >
+                      Teknisk SEO
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      className="text-gray-600 hover:text-gray-800 py-1 block font-normal"
+                    >
+                      SEO länkuppbyggnad
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      className="text-gray-600 hover:text-gray-800 py-1 block font-normal"
+                    >
+                      Rapportering
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <p className="uppercase tracking-wider text-gray-500 font-bold ">
+                  Webbutveckling
+                </p>
+                <ul className="mt-0 text-[15px]">
+                  <li>
+                    <a
+                      href="#"
+                      className="text-gray-600 hover:text-gray-800 py-1 block font-normal"
+                    >
+                      WordPress
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      className="text-gray-600 hover:text-gray-800 py-1 block font-normal"
+                    >
+                      React
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      className="text-gray-600 hover:text-gray-800 py-1 block font-normal"
+                    >
+                      Hosting & underhåll
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <p className="uppercase tracking-wider text-gray-500 font-bold">
+                  Marknadsföring
+                </p>
+                <ul className="mt-0 text-[15px]">
+                  <li>
+                    <a
+                      href="#"
+                      className="text-gray-600 hover:text-gray-800 py-1 block font-normal"
+                    >
+                      Meta
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      className="text-gray-600 hover:text-gray-800 py-1 block font-normal"
+                    >
+                      Google Ads
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </motion.nav>
+        </div>
+      </div>
+    </header>
+  );
+};
+
+export default Navbar;
+
+const ListItem = ({ children, navItemStyles = '', navLink = '#' }) => {
+  return (
+    <li>
+      <a
+        href={navLink}
+        className={`flex py-2 text-base font-medium lg:ml-12 lg:inline-flex ${navItemStyles}`}
+      >
+        {children}
+      </a>
+    </li>
+  );
+};

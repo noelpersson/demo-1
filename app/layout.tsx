@@ -4,7 +4,8 @@ import type { Metadata } from "next";
 import { DM_Sans, Montserrat } from "next/font/google";
 import NavbarBasicPreview from "@/components/navbar";
 import Head from "next/head";
-import Header from "@/components/Header copy";
+import Headercopy from "@/components/Headercopy";
+import MobileNavbar from "@/components/MobileNavbar";
 
 const mont = Montserrat({ subsets: ["latin"], display: "swap" });
 // const inter = DM_Sans({ subsets: ['latin'] })
@@ -31,7 +32,14 @@ export default function RootLayout({
         className={`bg-white ${mont.className} mx-auto overflow-hidden w-screen min-h-screen h-full`}
       >
         {/* <NavbarBasicPreview /> */}
-        <Header />
+        <div className="hidden md:block"> 
+          <Headercopy />
+        </div>
+
+        <div className="md:hidden"> 
+          <MobileNavbar />
+        </div>
+
         {children}
       </body>
     </html>

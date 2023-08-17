@@ -14,12 +14,8 @@ export default function Hero({}: Props) {
       <div className="grid items-center grid-cols-1 gap-10 lg:grid-cols-2">
         <div>
           <h1 className="text-4xl font-bold text-black sm:text-6xl lg:text-7xl">
-            Collaborate remotely, with
+            Collaborate remotely, with postcard
             <div className="relative inline-flex">
-              <span className="absolute inset-x-0 bottom-0 border-b-[30px] border-[#4ADE80]" />
-              <h1 className="relative text-4xl font-bold text-black sm:text-6xl lg:text-7xl">
-                Postcrafts.
-              </h1>
             </div>
           </h1>
           <p className="mt-8 text-base text-black sm:text-xl">
