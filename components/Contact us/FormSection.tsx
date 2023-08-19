@@ -61,12 +61,11 @@ export default function FormSection({}: Props) {
               <div
                 className={`tracking-tight flex flex-col items-start justify-start ${dm.className}`}
               >
-                <h1>Contact us</h1>
               </div>
             </div>
        </div>
         {/* Left */}
-        <div className='mx-[3vw] border-[1px] border-stone-300/30  bg-white shadow-md rounded-3xl flex max-w-xl flex-col gap-y-8 items-start justify-start py-8 px-6 md:px-16 md:py-16'>
+        <div className='mx-[0.5vw]  border-stone-300/30  bg-white  flex-col gap-y-8  md:px-5 md:py-16'>
             <h2 className='text-xl font-medium md:text-2xl lg:text-3xl'>Get your complimentary agency quote today</h2>
 
             {/* form */}
@@ -85,33 +84,7 @@ export default function FormSection({}: Props) {
         </div>
 
         <div className='flex flex-col items-start gap-y-8 mt-6 mx-[3vw]'>
-        <div className=" transition-all duration-200 hover:shadow-md shadow-none cursor-pointer z-50 max-w-[1200px] gap-y-4 text-slate-800 md:font-medium font-bold text-4xl flex flex-col items-start text-start jusitfy-start w-full bg-slate-100 py-8 px-6 md:px-16 md:py-16 rounded-3xl" >
-          <div
-            className={` tracking-tight flex flex-col items-start justify-start ${dm.className}`}
-          >
-            <h1>Phone</h1>
-          </div>
-          <div className="text-gray-600/80 text-sm font-normal max-w-[420px]">
-          Our customer care is open from Mon-Fri,
-10:00 am to 6:00 pm
-          </div>
-          <div className="text-indigo-600/80 text-2xl font-bold max-w-[420px]">
-            (000) 111 222 333
-          </div>
-        </div>
-        <div className=" transition-all duration-200 hover:shadow-md shadow-none cursor-pointer z-50 max-w-[1200px] gap-y-4 text-slate-800 md:font-medium font-bold text-4xl flex flex-col items-start text-start jusitfy-start w-full bg-slate-100 py-8 px-6 md:px-16 md:py-16 rounded-3xl" >
-          <div
-            className={` tracking-tight flex flex-col items-start justify-start ${dm.className}`}
-          >
-            <h1>Email</h1>
-          </div>
-          <div className="text-gray-600/80 text-sm font-normal max-w-[420px]">
-          Our support team Will get back to in 48-h
-during standard business hours.
-          </div>
-          <div className="text-indigo-600/80 text-2xl font-bold max-w-[420px]">
-            info@example.com
-          </div>
+        <div className={` tracking-tight flex flex-col items-start justify-start ${dm.className}`}>
         </div>
         </div>
         <ToastContainer
@@ -127,5 +100,6 @@ during standard business hours.
         theme="light"
       />
     </div>
+
   )
 }

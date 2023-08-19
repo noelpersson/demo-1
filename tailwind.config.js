@@ -14,6 +14,13 @@ module.exports = {
           '0 45px 65px rgba(0, 0, 0, 0.15)'
       ]
     },
+    colors: {
+      'primary': '#F2B807',
+      'secondary': '#F29F05',
+      'orange': '#F2911B',
+      'gray2': '#F2F2F2',
+      'black': '#0D0D0D',
+    },
     keyframes: {
       bounce2:{
         '0%' :{

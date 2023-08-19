@@ -29,7 +29,7 @@ export default function RootLayout({
         <meta name="description" content="Agency description" />
       </Head>
       <body
-        className={`bg-white ${mont.className} mx-auto overflow-hidden w-screen min-h-screen h-full`}
+        className={`bg-white  `}
       >
         {/* <NavbarBasicPreview /> */}
         <div className="hidden md:block"> 
@@ -39,8 +39,8 @@ export default function RootLayout({
         <div className="md:hidden"> 
           <MobileNavbar />
         </div>
-
         {children}
+        
       </body>
     </html>
   );

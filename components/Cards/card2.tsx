@@ -37,7 +37,7 @@ export default function Card2({
         />
       </div>
       <div className="gap-y-5 text-slate-800 font-medium text-3xl flex flex-col items-start text-start jusitfy-center">
-        <div className="text-[#c65b6b] text-sm font-bold">{head}</div>
+        <div className="text-secondary text-sm font-bold">{head}</div>
         <h1
           className={`tracking-tight flex flex-col items-start flex-wrap justify-start ${dm.className}`}
         >
