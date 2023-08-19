@@ -1,14 +1,7 @@
 import React from 'react'
 
 
-const navigation = [
-  { name: 'Product', href: '#' },
-  { name: 'Features', href: '#' },
-  { name: 'Marketplace', href: '#' },
-  { name: 'Company', href: '#' },
-]
-
-export default function Example() {
+export default function Hero3() {
   return (
     <div className="bg-white">
       <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
@@ -27,5 +20,3 @@ export default function Example() {
     </div>
   );
 }
-
-

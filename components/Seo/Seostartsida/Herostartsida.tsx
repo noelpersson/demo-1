@@ -1,26 +1,34 @@
-import React from 'react'
+import React from 'react';
+import Image from 'next/image';
 
 const hero = () => {
   return (
     <section>
-      <div className="relative items-center w-full px-5 py-24 mx-auto md:px-12 lg:px-16 max-w-7xl">
+      <div className="relative -z-10 items-center w-full px-5 py-24 mx-auto md:px-12 lg:px-16 max-w-7xl">
         <div className="relative flex-col items-start m-auto align-middle">
           <div className="grid grid-cols-1 gap-6 lg:grid-cols-2 lg:gap-24">
             <div className="relative items-center gap-12 m-auto lg:inline-flex md:order-first">
               <div className="max-w-xl text-center lg:text-left">
-                <div><p className="text-2xl font-medium tracking-tight text-black sm:text-4xl">
+                <div>
+                  <p className="text-2xl font-medium tracking-tight text-black sm:text-4xl">
                     I am a short heading
                   </p>
                   <p className="max-w-xl mt-4 text-base tracking-tight text-gray-600">
-                    Use this paragraph to share information about your company or products. Make
-                    it engaging and interesting, and showcase your brand's personality. Thanks for
-                    visiting our website!
+                    Use this paragraph to share information about your company
+                    or products. Make it engaging and interesting, and showcase
+                    your brand's personality. Thanks for visiting our website!
                   </p>
                 </div>
               </div>
             </div>
-            <div className="order-first block w-full mt-12 aspect-square lg:mt-0">
-              <img className="object-cover object-center w-full mx-auto bg-gray-300 border lg:ml-auto" alt="hero" src="../images/" />
+            <div className=" w-full mt-12 aspect-square lg:mt-0">
+              <Image
+                className="object-cover object-center w-full mx-auto bg-gray-300 border lg:ml-auto"
+                alt="hero"
+                src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"
+                width={387}
+                height={300}
+              />
             </div>
           </div>
         </div>
@@ -64,10 +72,8 @@ const hero = () => {
           </div>
         </div>
       </div>
-</section>
+    </section>
+  );
+};
 
-
-  )
-}
-
-export default hero
+export default hero;
