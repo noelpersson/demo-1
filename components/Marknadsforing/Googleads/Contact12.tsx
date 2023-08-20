@@ -1,5 +1,5 @@
-import FormSection from '@/components/Contactus/FormSection';
-import React from 'react';
+import FormSection from "@/components/Contactus/FormSection";
+import React from "react";
 
 const Contact12 = () => {
   return (
