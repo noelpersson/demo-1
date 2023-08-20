@@ -9,10 +9,18 @@ const App: React.FC = () => {
         <nav>
           <ul className="flex items-center justify-center font-semibold">
             <li className="relative group px-3 py-2">
-              <Link href="/" className="text-black hover:text-yellow-400 cursor-pointer transition duration-500">Home</Link>
+              <Link href="/" 
+                className="text-black hover:text-yellow-400 cursor-pointer transition duration-500"
+                >
+                Hem
+              </Link>
             </li>
             <li className="relative group px-3 py-2">
-              <Link href="/about" className="text-black hover:text-yellow-400 cursor-pointer transition duration-500">About us</Link>
+              <Link href="/about" 
+                className="text-black hover:text-yellow-400 cursor-pointer transition duration-500"
+                >
+                Om oss 
+              </Link>
             </li>
             <li className="relative group px-3 py-2">
               <button className="hover:text-yellow-400 cursor-default">Tjänster</button>
@@ -22,26 +30,70 @@ const App: React.FC = () => {
                   <div className="relative z-50">
                     <div className="mt-6 grid grid-cols-3 gap-6">
                       <div>
-                        <p className="uppercase tracking-wider text-gray-500 font-medium text-[16px]">SEO</p>
+                      <Link href="/seo"  
+                        className="uppercase tracking-wider text-gray-500 hover:text-secondary transition duration-500 font-medium text-[16px]"
+                      >
+                        SEO
+                      </Link>
                         <ul className="mt-3 text-[15px]">
-                          <li><a href="seo/onpageseo" className="text-gray-600 hover:text-secondary transition duration-500 py-1 block font-normal">On page SEO</a></li>
-                          <li><a href="/seo/offpageseo" className="text-gray-600 hover:text-secondary transition duration-500 py-1 block font-normal">Off page SEO</a></li>
-                          <li><a href="/seo/tekniskseo" className="text-gray-600 hover:text-secondary transition duration-500 py-1 block font-normal">Teknisk SEO</a></li>
+                          <Link href="seo/onpageseo"
+                            className="text-gray-600 hover:text-secondary transition duration-500 py-1 block font-normal"
+                          >
+                              On page SEO
+                          </Link>
+                          <Link href="/seo/offpageseo" 
+                            className="text-gray-600 hover:text-secondary transition duration-500 py-1 block font-normal"
+                            >
+                              Off page SEO
+                          </Link>
+                          <Link href="/seo/tekniskseo" 
+                            className="text-gray-600 hover:text-secondary transition duration-500 py-1 block font-normal"
+                            >
+                              Teknisk SEO
+                          </Link>
                         </ul>
                       </div>
                       <div>
-                        <p className="uppercase tracking-wider text-gray-500 font-medium text-[16px]">Webbutveckling</p>
+                        <Link href="/webbutveckling"
+                          className="uppercase tracking-wider text-gray-500 hover:text-secondary transition duration-500 font-medium text-[16px]"
+                        >
+                          Webbutveckling
+                        </Link>
                         <ul className="mt-3 text-[15px]">
-                          <li><a href="/webbutveckling/wordpress" className="text-gray-600 hover:text-gray-800 py-1 block font-normal">WordPress</a></li>
-                          <li><a href="/webbutveckling/react" className="text-gray-600 hover:text-gray-800 py-1 block font-normal">React</a></li>
-                          <li><a href="/webbutveckling/hostingunderhall" className="text-gray-600 hover:text-gray-800 py-1 block font-normal">Hosting & underhåll</a></li>
+                          <Link href="/webbutveckling/wordpress"
+                            className="text-gray-600 hover:text-secondary transition duration-500 py-1 block font-normal"
+                          >
+                            Wordpress
+                          </Link>
+                          <Link href="/webbutveckling/react"
+                            className="text-gray-600 hover:text-secondary transition duration-500 py-1 block font-normal"
+                          >
+                              React
+                          </Link>
+                          <Link href="/webbutveckling/hostingunderhall"
+                            className="text-gray-600 hover:text-secondary transition duration-500 py-1 block font-normal"
+                          >
+                            Hosting & underhåll
+                          </Link>
                         </ul>
                       </div>
                       <div>
-                        <p className="uppercase tracking-wider text-gray-500 font-medium text-[16px]">Marknadsföring</p>
+                        <Link href="/marknadsforing" 
+                          className="uppercase tracking-wider text-gray-500 hover:text-secondary transition duration-500font-medium text-[16px]"
+                          >
+                            Marknadsföring
+                        </Link>
                         <ul className="mt-3 text-[15px]">
-                          <li><a href="/marknadsforing/meta" className="text-gray-600 hover:text-gray-800 py-1 block font-normal">Meta</a></li>
-                          <li><a href="/marknadsforing/googleads" className="text-gray-600 hover:text-gray-800 py-1 block font-normal">Google Ads</a></li>
+                          <Link href="/marknadsforing/meta" 
+                            className="text-gray-600 hover:text-secondary transition duration-500 py-1 block font-normal"
+                          >
+                            Meta
+                          </Link>
+                          <Link href="/marknadsforing/googleads" 
+                            className="text-gray-600 hover:text-secondary transition duration-500 py-1 block font-normal"
+                            >                            
+                            Google Ads
+                          </Link>
                         </ul>
                       </div>
                     </div>

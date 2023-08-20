@@ -14,6 +14,9 @@ module.exports = {
           '0 45px 65px rgba(0, 0, 0, 0.15)'
       ]
     },
+    borderRadius: {
+      'large': '1.5rem',
+    },
     colors: {
       'primary': '#F2B807',
       'secondary': '#F29F05',

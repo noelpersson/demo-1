@@ -3,6 +3,7 @@ import Hero2 from '@/components/Seo/offpageseo/Hero2';
 import Metod2 from '@/components/Seo/offpageseo/Metod2';
 import Contact2 from '@/components/Seo/offpageseo/Contact2';
 import Content2 from '@/components/Seo/offpageseo/Content2';
+import Footer from '@/components/Footer';
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <Content2 />
       <Metod2 />
       <Contact2 />
+      <Footer  />
     </main>
   );
 }

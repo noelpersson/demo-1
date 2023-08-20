@@ -3,6 +3,7 @@ import Hero3 from '@/components/Seo/tekniskseo/Hero3';
 import Metod3 from '@/components/Seo/tekniskseo/Metod3';
 import Contact3 from '@/components/Seo/tekniskseo/contact3';
 import Content3 from '@/components/Seo/tekniskseo/Content3';
+import Footer from '@/components/Footer';
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <Content3 />
       <Metod3 />
       <Contact3 />
+      <Footer  />
     </main>
   );
 }

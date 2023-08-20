@@ -11,23 +11,19 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className={`flex items-center w-full z-100 bg-white  left-0`}>
+    <header className={`flex items-center w-full z-10 bg-white  left-0`}>
       <div className="container">
         <div className="relative flex items-center justify-between mx-4">
           <div className="max-w-full px-7 w-60">
             <a href="/#" className="block w-full py-5">
-              <img
-                src="1"
-                alt="logo"
-                className="w-full"
-              />
+              <img src="1" alt="logo" className="w-full" />
             </a>
           </div>
           <button
             className={`relative group ${isOpen ? 'active' : ''}`}
             onClick={() => setIsOpen(!isOpen)}
           >
-            <div className="relative flex items-center justify-center rounded-full w-[50px] h-[50px] transform transition-all  ring-0 ring-gray-300 hover:ring-8 group-focus:ring-4 ring-opacity-30 duration-200 shadow-md">
+            <div className="relative flex z-10 items-center justify-center rounded-full w-[50px] h-[50px] transform transition-all  ring-0 ring-gray-300 hover:ring-8 group-focus:ring-4 ring-opacity-30 duration-200 shadow-md">
               <div className="flex flex-col justify-between w-[20px] h-[20px] transform transition-all duration-300 origin-center overflow-hidden">
                 <div
                   className={`bg-black h-[2px] w-7 transform transition-all duration-300 origin-left ${
@@ -62,7 +58,7 @@ const Navbar = () => {
                   href="/"
                   className="text-black tracking-wider font-medium hover:text-yellow-400 cursor-pointer transition duration-500"
                 >
-                  Home
+                  Hem
                 </Link>
               </div>
               <div className="relative group ">
@@ -70,90 +66,100 @@ const Navbar = () => {
                   href="/about"
                   className="text-black tracking-wider font-medium hover:text-yellow-400 cursor-pointer transition duration-500"
                 >
-                  About us
+                  Om oss
                 </Link>
               </div>
               <div>
-                <p className=" tracking-wider text-gray-500 font-bold ">SEO</p>
+                <Link
+                  href="/seo"
+                  className="uppercase tracking-wider text-gray-500 font-bold"
+                >
+                  SEO
+                </Link>
                 <ul className="mt-0 text-[15px]">
-                  
                   <li>
-                    <a
+                    <Link
                       href="#"
-                      className="text-gray-600 hover:text-gray-800 py-1 block font-normal"
+                      className="text-gray-600 hover:text-secondary transition duration-500 py-1 block font-normal"
                     >
                       On page SEO
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
+                    <Link
                       href="#"
-                      className="text-gray-600 hover:text-gray-800 py-1 block font-normal"
+                      className="text-gray-600 hover:text-secondary transition duration-500 py-1 block font-normal"
                     >
                       Off page SEO
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
+                    <Link
                       href="#"
-                      className="text-gray-600 hover:text-gray-800 py-1 block font-normal"
+                      className="text-gray-600 hover:text-secondary transition duration-500 py-1 block font-normal"
                     >
                       Teknisk SEO
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
               <div>
-                <p className="uppercase tracking-wider text-gray-500 font-bold ">
+                <Link
+                  href="/webbutveckling"
+                  className="uppercase tracking-wider text-gray-500 hover:text-secondary transition duration-500 font-bold"
+                >
                   Webbutveckling
-                </p>
+                </Link>
                 <ul className="mt-0 text-[15px]">
                   <li>
-                    <a
+                    <Link
                       href="#"
-                      className="text-gray-600 hover:text-gray-800 py-1 block font-normal"
+                      className="text-gray-600 hover:text-secondary transition duration-500 py-1 block font-normal"
                     >
                       WordPress
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
+                    <Link
                       href="#"
-                      className="text-gray-600 hover:text-gray-800 py-1 block font-normal"
+                      className="text-gray-600 hover:text-secondary transition duration-500 py-1 block font-normal"
                     >
                       React
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
+                    <Link
                       href="#"
-                      className="text-gray-600 hover:text-gray-800 py-1 block font-normal"
+                      className="text-gray-600 hover:text-secondary transition duration-500 py-1 block font-normal"
                     >
                       Hosting & underhåll
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
               <div>
-                <p className="uppercase tracking-wider text-gray-500 font-bold">
+                <Link
+                  href="/marknadsforing"
+                  className="uppercase tracking-wider text-gray-500 hover:text-secondary transition duration-500 font-bold"
+                >
                   Marknadsföring
-                </p>
+                </Link>
                 <ul className="mt-0 text-[15px]">
                   <li>
-                    <a
+                    <Link
                       href="#"
-                      className="text-gray-600 hover:text-gray-800 py-1 block font-normal"
+                      className="text-gray-600 hover:text-secondary transition duration-500 py-1 block font-normal"
                     >
                       Meta
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
+                    <Link
                       href="#"
-                      className="text-gray-600 hover:text-gray-800 py-1 block font-normal"
+                      className="text-gray-600 hover:text-secondary transition duration-500 py-1 block font-normal"
                     >
                       Google Ads
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -166,5 +172,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
-

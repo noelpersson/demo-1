@@ -1,4 +1,5 @@
 'use client';
+import Footer from "@/components/Footer";
 import Hero4 from "@/components/Seo/Onpage/Hero4";
 import Metod4 from "@/components/Seo/Onpage/Metod4";
 import Contact4 from "@/components/Seo/Onpage/contact4";
@@ -12,6 +13,7 @@ export default function Home() {
         <Content4 />
         <Metod4 />
         <Contact4 />
+        <Footer />
     </main>
   );
 }
