@@ -1,5 +1,6 @@
 'use client';
 import React, { useState } from 'react';
+import Image from 'next/image';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 
@@ -16,7 +17,7 @@ const Navbar = () => {
         <div className="relative flex items-center justify-between mx-4">
           <div className="max-w-full px-7 w-60">
             <a href="/#" className="block w-full py-5">
-              <img src="1" alt="logo" className="w-full" />
+              <Image src="1" alt="logo" width={60} height={60} />
             </a>
           </div>
           <button

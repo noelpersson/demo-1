@@ -1,4 +1,5 @@
 import { DM_Sans } from "next/font/google";
+import Image from "next/image";
 const dm = DM_Sans({
   subsets: ["latin"],
   display: "swap",
@@ -39,10 +40,12 @@ export default function Hero({}: Props) {
           </div>
         </div>
         <div>
-          <img
+          <Image 
+            src="https://cdn.rareblocks.xyz/collection/celebration/images/hero/2/hero-img.png" 
+            alt="Beskrivning av bilden"  // Lägg till en beskrivning här
+            width={500}  // Exempelvärde, du behöver ange rätt värde
+            height={300} // Exempelvärde, du behöver ange rätt värde
             className="w-full"
-            src="https://cdn.rareblocks.xyz/collection/celebration/images/hero/2/hero-img.png"
-            alt=""
           />
         </div>
       </div>

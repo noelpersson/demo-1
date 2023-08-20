@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 export default () => {
   const testimonials = [
@@ -62,9 +63,12 @@ export default () => {
                     </p>
                   </blockquote>
                   <div className="flex items-center gap-x-4 p-4 mt-6 bg-indigo-50">
-                    <img
-                      src={item.avatar}
-                      className="w-16 h-16 rounded-full border-2 border-secondary"
+                  <Image 
+                    src={item.avatar} 
+                    alt="Avatar"  // Lägg till en beskrivning här
+                    layout="fill" 
+                    objectFit="cover" 
+                    className="rounded-full" 
                     />
                     <div>
                       <span className="block text-gray-800 font-semibold">
