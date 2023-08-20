@@ -1,5 +1,6 @@
-import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
-import React, { useState } from 'react';
+import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
+import React, { useState } from "react";
+
 
 function Metod12() {
     const [key, setKey] = useState<number>(1);
