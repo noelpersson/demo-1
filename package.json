@@ -5,8 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "start": "next start"
   },
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
@@ -24,8 +23,6 @@
     "@types/three": "^0.154.0",
     "autoprefixer": "10.4.14",
     "emailjs": "^4.0.2",
-    "eslint": "8.45.0",
-    "eslint-config-next": "13.4.10",
     "flowbite": "^1.8.1",
     "flowbite-react": "^0.5.0",
     "framer-motion": "^10.13.1",
