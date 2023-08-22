@@ -55,7 +55,7 @@ export default function FormSection({}: Props) {
     }, 1500);
   };
   return (
-    <div className='w-full flex flex-col items-center z-[-10] justify-center gap-x-14 text-slate-900'>
+    <div className='w-full flex flex-col items-center justify-center gap-x-14 text-slate-900'>
        <div className='w-full flex items-center justify-center'>
             <div className="z-[-10] my-16 md:w-3/4 max-w-[1200px] gap-y-4 text-slate-800 md:font-medium font-bold text-5xl flex flex-col items-start text-start jusitfy-start">
               <div

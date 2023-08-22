@@ -13,7 +13,7 @@ const Submit: React.FunctionComponent<ButtonProps> = ({status,...props}) => {
        {...props}
         type="submit"
         tabIndex={0}
-        className="group my-1 flex cursor-pointer text-xs md:text-sm flex-row ocus:ring-indigo-300 focus:ring-2 outline-none ring-0 font-medium text-white bg-black hover:bg-primary active:bg-secondary items-center justify-center gap-x-3 md:gap-x-5 overflow-hidden rounded-2xl border-[2px] border-[#f1f1f1] sm:px-8 py-3 px-3 sm:py-4 transition-all duration-300 focus:bg-indigo-500 focus:shadow-sm active:scale-95 active:shadow-sm w-full"
+        className="group my-1 flex cursor-pointer text-xs md:text-sm flex-row ocus:ring-indigo-300 focus:ring-2 outline-none ring-0 font-medium text-white bg-black hover:bg-primary hover:text-secondary active:bg-secondary active:text-black items-center justify-center gap-x-3 md:gap-x-5 overflow-hidden rounded-2xl border-[2px] border-[#f1f1f1] sm:px-8 py-3 px-3 sm:py-4 transition-all duration-300 focus:bg-secondary focus:shadow-sm active:scale-95 active:shadow-sm w-full"
       >
         <div className="transition-transform duration-300 group-focus:translate-x-4">
           {status==="Pending"?"Pending...":"Få offert"}

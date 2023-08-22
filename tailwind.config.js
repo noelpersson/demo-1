@@ -18,8 +18,8 @@ module.exports = {
       'large': '1.5rem',
     },
     colors: {
-      'primary': '#F2B807',
-      'secondary': '#F29F05',
+      'primary': '#000000',
+      'secondary': '#F7CF00',
       'orange': '#F2911B',
       'gray2': '#F2F2F2',
       'black': '#0D0D0D',

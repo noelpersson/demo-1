@@ -16,8 +16,8 @@ const Navbar = () => {
       <div className="container">
         <div className="relative flex items-center justify-between mx-4">
           <div className="max-w-full px-7 w-60">
-            <a href="/#" className="block w-full py-5">
-              <Image src="1" alt="logo" width={60} height={60} />
+            <a href="" className="block w-full py-5">
+              {/*<Image src="" alt="logo" width={60} height={60} />*/}
             </a>
           </div>
           <button

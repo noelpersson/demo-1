@@ -1,18 +1,10 @@
 import React from "react";
 import Card2 from "../Cards/card2";
-import Image from "next/image";
-import image4 from "/public/images/13.png";
-import image5 from "/public/images/14.png";
-import image7 from "/public/images/16.png";
-import image8 from "/public/images/17.png";
-
-
 
 export default function FifthSection() {
   return (
     <section className="relative w-full min-h-[500px] overflow-hidden bg-[#ecf2f7]">
-      <div className="relative w-full h-full">
-      </div>
+      <div className="relative w-full h-full"></div>
 
       {/* Bakgrundscirkel */}
       <div className="relative z-10 max-w-[2200px] mx-auto flex flex-col items-center justify-start min-h-[500px] py-24 px-[8vw] xl:px-80">
@@ -34,7 +26,7 @@ export default function FifthSection() {
           description={
             "Donec metus lorem, vulputate at sapien sit amet, auctor iaculis lorem. In vel nisi.Vestibulum eget risus velit. Aliquam tristique libero at dui sodales, et placerat orci lobortis. Maecenas ipsum neque, elementum id dignissim et, imperdiet vitae mauris."
           }
-          image={image5.src}
+          image="/images/14.png"
           head={"Step One"}
         />
         <Card2
@@ -43,7 +35,7 @@ export default function FifthSection() {
           description={
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem facilis, inventore ad vero quidem cum velit, sit aut molestiae alias mollitia fuga ut impedit nisi quae? Adipisci eaque accusamus fugiat."
           }
-          image={image4.src}
+          image="/images/13.png"
           head={"Step Two"}
         />
         <Card2
@@ -52,7 +44,7 @@ export default function FifthSection() {
           description={
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem facilis.."
           }
-          image={image8.src}
+          image="/images/17.png"
           head={"Step Three"}
         />
         <Card2
@@ -61,7 +53,7 @@ export default function FifthSection() {
           description={
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem facilis.."
           }
-          image={image7.src}
+          image="/images/16.png"
           head={"Step Four"}
         />
       </div>

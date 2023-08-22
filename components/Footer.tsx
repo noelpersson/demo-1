@@ -2,7 +2,7 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <div className=" bottom-0 px-20 h-full bg-gradient-to-br from-primary to-secondary text-white w-screen flex flex-col justify-between p-10 -z10">
+    <div className=" bottom-0 px-20 h-full bg-gradient-to-br from-yellow-600 to-secondary text-white w-screen flex flex-col justify-between p-10 -z10">
   {/* Övre delen av footern */}
   <div className="flex-1">
     <h1 className="text-6xl py-30 font-bold mb-10">Lyckas Online</h1>
@@ -25,7 +25,7 @@ const Footer = () => {
   {/* Nedre delen av footern */}
   <div className="flex justify-between items-center">
     <p>&copy; {new Date().getFullYear()} Nordeeq</p>
-    <p>Designad med ❤️ av [Ditt Namn]</p>
+
   </div>
 </div>
 

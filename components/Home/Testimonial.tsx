@@ -66,7 +66,8 @@ export default () => {
                   <Image 
                     src={item.avatar} 
                     alt="Avatar"  // Lägg till en beskrivning här
-                    layout="fill" 
+                    width={40}
+                    height={40}
                     objectFit="cover" 
                     className="rounded-full" 
                     />
