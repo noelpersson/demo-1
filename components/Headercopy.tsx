@@ -113,7 +113,7 @@ const App: React.FC = () => {
         <nav>
             <ul>
               <li>
-                <a href="contact" className="rounded-full px-3 py-2 font-semibold bg-white bg-opacity-10 flex items-center group">
+                <a href="/contact" className="rounded-full px-3 py-2 font-semibold bg-white bg-opacity-10 flex items-center group">
                   <span className="mr-2">Kontakta oss</span>
                   <svg className="stroke-current" width="10" height="10" strokeWidth="2" viewBox="0 0 10 10" aria-hidden="true">
                     <g fillRule="evenodd">
