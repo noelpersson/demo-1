@@ -22,27 +22,25 @@ function PageBanner() {
   useEffect(() => {
     // Uppdatera animationens tillstånd baserat på skrollpositionen
     controls.start({
-      y: -scrollY / 3, // Justera detta värde för att ändra hastigheten på förflyttningen
+      y: -scrollY / 4, // Justera detta värde för att ändra hastigheten på förflyttningen
       opacity: 1 - scrollY / 1000 // Justera detta värde för att ändra hastigheten på opacitetsförändringen
     });
   }, [scrollY, controls]);
 
   return (
-    <div className="page-banner bg-page-banner-1 flex items-end justify-start lg:h-[950px] h-[550px] bg-fixed bg-center bg-cover z-[-10] before:absolute before:bg-black before:opacity-40 before:w-full before:h-full">
-          <div className="container">
-            <motion.div
-              className="banner-content pb-[80px] relative"
-              animate={controls}
-              > 
-                  <span className="text-[18px] px-4 leading-[29px] text-white uppercase max-w-[225px] block">
-                      Nordeeq
-                  </span>
-                  <h2 className="sm:text-[100px] px-4 text-[30px] sm:leading-[110px] text-white max-w-[320px]">
-                      Om oss
-                  </h2>
-                </motion.div>
-              </div>
-          </div>
+  <div className="relative z-[-10] bg-black h-[500px]">
+    <div className="container">
+      <motion.div className="banner-content sm:pt-60 xs:pt-78 relative z-10" animate={controls}>
+        <span className="text-[25px] px-8 leading-[29px] text-white uppercase max-w-[225px] block">
+          Nordeeq
+        </span>
+        <h2 className=" xs:text-[73px] sm:text-[120px] px-8 text-[60px] sm:leading-[110px] text-white max-w-[320px]">
+          Om oss
+        </h2>
+      </motion.div>
+    </div>
+  </div>
+
   );
 }
 

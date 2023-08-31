@@ -56,34 +56,36 @@ export default function FormSection({}: Props) {
   };
   return (
     <div className='w-full flex flex-col items-center justify-center gap-x-14 text-slate-900'>
-    <div className='w-full flex items-center justify-center'>
-        <div className="z-[-10] my-16 md:w-3/4 max-w-[1200px] gap-y-4 text-slate-800 md:font-medium font-bold text-5xl flex flex-col items-start text-start jusitfy-start">
-            <div className={`tracking-tight flex flex-col items-start justify-start ${dm.className}`}>
+       <div className='w-full flex items-center justify-center'>
+            <div className="z-[-10] my-16 md:w-3/4 max-w-[1200px] gap-y-4 text-slate-800 md:font-medium font-bold text-5xl flex flex-col items-start text-start jusitfy-start">
+              <div
+                className={`tracking-tight flex flex-col items-start justify-start ${dm.className}`}
+              >
+              </div>
             </div>
+       </div>
+        {/* Left */}
+        <div className='mx-[0.5vw]  border-stone-300/30  bg-white  flex-col gap-y-8  md:px-5 md:py-16'>
+            {/* form */}
+            <form onSubmit={(e)=>{e.preventDefault(); sendEmail(e); e.currentTarget.reset()}} className='flex flex-col gap-y-4 items-start justify-start w-full'>
+                <Button setter={setName} label={'Name'} placeholder={'your name'} type={'text'}/>
+                <Button setter={setEmail} label={'Email'} placeholder={'your email'} type={'text'}/>
+                <Button setter={setPhone} label={'Phone'} placeholder={'your phone'} type={'tel'}/>
+
+                <div className='relative flex flex-col items-start justify-start gap-y-2 w-full'>
+                    <label htmlFor={"description"} className='font-medium text-sm bg-white'>How can we help you?</label>
+                    <textarea required onChange={(e)=>setdescription(e.currentTarget.value)} id={"description"} placeholder={"How can we help you?"} className='button'/>
+                </div>
+
+                <Submit status={status}/>
+            </form>
         </div>
-    </div>
-    {/* Left */}
-    <div className='flex items-center justify-center w-full'>
-        {/* form */}
-        <form onSubmit={(e) => { e.preventDefault(); sendEmail(e); e.currentTarget.reset() }} className='flex flex-col gap-y-4 items-start justify-start w-2/4 '>
-            <Button setter={setName} label={'Name'} placeholder={'your name'} type={'text'} />
-            <Button setter={setEmail} label={'Email'} placeholder={'your email'} type={'text'} />
-            <Button setter={setPhone} label={'Phone'} placeholder={'your phone'} type={'tel'} />
 
-            <div className='relative flex flex-col items-start justify-start gap-y-2 w-full'>
-                <label htmlFor={"description"} className='font-medium text-sm bg-white'>How can we help you?</label>
-                <textarea required onChange={(e) => setdescription(e.currentTarget.value)} id={"description"} placeholder={"How can we help you?"} className='button' />
-            </div>
-
-            <Submit status={status} />
-        </form>
-    </div>
-
-    <div className='flex flex-col items-start gap-y-8 mt-6 mx-[3vw]'>
-        <div className={`tracking-tight flex flex-col items-start justify-start ${dm.className}`}>
+        <div className='flex flex-col items-start gap-y-8 mt-6 mx-[3vw]'>
+        <div className={` tracking-tight flex flex-col items-start justify-start ${dm.className}`}>
         </div>
-    </div>
-    <ToastContainer
+        </div>
+        <ToastContainer
         position="bottom-center"
         autoClose={5000}
         hideProgressBar={false}
@@ -94,9 +96,8 @@ export default function FormSection({}: Props) {
         draggable
         pauseOnHover={false}
         theme="light"
-    />
-</div>
-
+      />
+    </div>
 
   )
 }

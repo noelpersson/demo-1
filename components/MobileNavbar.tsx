@@ -5,34 +5,43 @@ import Link from 'next/link';
 import { motion } from 'framer-motion';
 
 const variants = {
-  open: { opacity: 1, y: 0 },
-  closed: { opacity: 0, y: '-5%' },
+  open: { 
+    opacity: 1, 
+    y: 0,
+    transition: { duration: 0.3 }  // Set the animation duration 
+  },
+  closed: { 
+    opacity: 0, 
+    y: '-40%',
+    transition: { duration: 0.1 }  // set the animation duration
+  },
 };
+
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className={`flex items-center w-full z-10 bg-white  left-0`}>
-      <div className="container">
-        <div className="relative flex items-center justify-between mx-4">
-          <div className="max-w-full px-7 w-60">
-            <a href="" className="block w-full py-5">
-              {/*<Image src="" alt="logo" width={60} height={60} />*/}
+    <header className={`  flex items-center w-full z-10 bg-white  `}>
+        <div className=" flex items-center justify-between mx-4 w-full">
+          <div className="relative flex items-center  max-w-full ">
+            <a href="/" className="block w-full py-5">
+              {/* <Image src="" alt="logo" width={60} height={60} /> */}
+              <span className="font-bold text-black text-xl">Nordeeq</span>
             </a>
           </div>
           <button
-            className={`relative group ${isOpen ? 'active' : ''}`}
+            className={`group ${isOpen ? 'active' : ''}`} 
             onClick={() => setIsOpen(!isOpen)}
           >
             <div className="relative flex z-10 items-center justify-center rounded-full w-[50px] h-[50px] transform transition-all  ring-0 ring-gray-300 hover:ring-8 group-focus:ring-4 ring-opacity-30 duration-200 shadow-md">
-              <div className="flex flex-col justify-between w-[20px] h-[20px] transform transition-all duration-300 origin-center overflow-hidden">
+              <div className="flex flex-col justify-between w-[20px] h-[20px] transform transition-all duration-400 origin-center overflow-hidden">
                 <div
-                  className={`bg-black h-[2px] w-7 transform transition-all duration-300 origin-left ${
+                  className={`bg-black h-[2px] w-7 transform transition-all ease-in-out duration-400 origin-left ${
                     isOpen ? 'rotate-[42deg]' : ''
                   }`}
                 ></div>
                 <div
-                  className={`bg-black h-[2px] w-1/2 rounded transform transition-all duration-300 ${
+                  className={`bg-black h-[2px] w-1/2 rounded transform transition-all duration-500 ${
                     isOpen ? '-translate-x-10' : ''
                   }`}
                 ></div>
@@ -49,7 +58,7 @@ const Navbar = () => {
             animate={isOpen ? 'open' : 'closed'}
             variants={variants}
             id="navbarCollapse"
-            className={`position: absolute right-4 z-1000 top-full w-full max-w-[290px] rounded-lg bg-white py-5 px-6 shadow lg:static lg:block lg:w-full lg:max-w-full lg:shadow-none ${
+            className={`absolute right-4 z-1000 top-[85px] w-full max-w-[290px] max-h-[80vh] overflow-y-auto rounded-lg bg-white py-5 px-6 shadow lg:static lg:block lg:w-full lg:max-w-full lg:shadow-none ${
               !isOpen && 'hidden'
             } `}
           >
@@ -70,17 +79,25 @@ const Navbar = () => {
                   Om oss
                 </Link>
               </div>
+              <div className="relative group ">
+                <Link
+                  href="/contact"
+                  className="text-black tracking-wider font-medium hover:text-yellow-400 cursor-pointer transition duration-500"
+                >
+                  Kontakta oss
+                </Link>
+              </div>
               <div>
                 <Link
                   href="/seo"
-                  className="uppercase tracking-wider text-gray-500 font-bold"
+                  className="uppercase tracking-wider text-gray-500 hover:text-secondary transition duration-500 font-bold"
                 >
                   SEO
                 </Link>
                 <ul className="mt-0 text-[15px]">
                   <li>
                     <Link
-                      href="#"
+                      href="/seo/onpageseo"
                       className="text-gray-600 hover:text-secondary transition duration-500 py-1 block font-normal"
                     >
                       On page SEO
@@ -88,7 +105,7 @@ const Navbar = () => {
                   </li>
                   <li>
                     <Link
-                      href="#"
+                      href="/seo/offpageseo"
                       className="text-gray-600 hover:text-secondary transition duration-500 py-1 block font-normal"
                     >
                       Off page SEO
@@ -96,7 +113,7 @@ const Navbar = () => {
                   </li>
                   <li>
                     <Link
-                      href="#"
+                      href="/seo/tekniskseo"
                       className="text-gray-600 hover:text-secondary transition duration-500 py-1 block font-normal"
                     >
                       Teknisk SEO
@@ -114,7 +131,7 @@ const Navbar = () => {
                 <ul className="mt-0 text-[15px]">
                   <li>
                     <Link
-                      href="#"
+                      href="/webbutveckling/wordpress"
                       className="text-gray-600 hover:text-secondary transition duration-500 py-1 block font-normal"
                     >
                       WordPress
@@ -122,7 +139,7 @@ const Navbar = () => {
                   </li>
                   <li>
                     <Link
-                      href="#"
+                      href="/webbutveckling/react"
                       className="text-gray-600 hover:text-secondary transition duration-500 py-1 block font-normal"
                     >
                       React
@@ -130,7 +147,7 @@ const Navbar = () => {
                   </li>
                   <li>
                     <Link
-                      href="#"
+                      href="/webbutveckling/hostingunderhall"
                       className="text-gray-600 hover:text-secondary transition duration-500 py-1 block font-normal"
                     >
                       Hosting & underhåll
@@ -148,7 +165,7 @@ const Navbar = () => {
                 <ul className="mt-0 text-[15px]">
                   <li>
                     <Link
-                      href="#"
+                      href="/marknadsforing/meta"
                       className="text-gray-600 hover:text-secondary transition duration-500 py-1 block font-normal"
                     >
                       Meta
@@ -156,7 +173,7 @@ const Navbar = () => {
                   </li>
                   <li>
                     <Link
-                      href="#"
+                      href="/marknadsforing/googleads"
                       className="text-gray-600 hover:text-secondary transition duration-500 py-1 block font-normal"
                     >
                       Google Ads
@@ -167,7 +184,6 @@ const Navbar = () => {
             </div>
           </motion.nav>
         </div>
-      </div>
     </header>
   );
 };

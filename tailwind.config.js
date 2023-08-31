@@ -17,6 +17,25 @@ module.exports = {
     borderRadius: {
       'large': '1.5rem',
     },
+
+    screens: {
+      'xs': '475px',
+      'sm': '640px',
+      'md': '768px',
+      'lg': '1024px',
+      'xl': '1200px',
+      '2xl': '1440px',
+
+    },
+
+    spacing: {
+      '70' : '17.5rem',
+      '72' : '18rem',
+      '74' : '18.5rem',
+      '76' : '19rem',
+      '78' : '22rem',
+    },
+
     colors: {
       'primary': '#000000',
       'secondary': '#F7CF00',

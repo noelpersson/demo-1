@@ -28,7 +28,7 @@ export default function Index() {
               <dt className="order-last text-lg font-medium text-gray-500">
                 Total Sales
               </dt>
-              <dd className="text-4xl font-extrabold text-primary md:text-5xl">
+              <dd className="text-4xl font-extrabold text-secondary md:text-5xl">
                 $4.8m
               </dd>
             </motion.div>
@@ -37,7 +37,7 @@ export default function Index() {
               <dt className="order-last text-lg font-medium text-gray-500">
                 Official Addons
               </dt>
-              <dd className="text-4xl font-extrabold text-primary md:text-5xl">
+              <dd className="text-4xl font-extrabold text-secondary md:text-5xl">
                 24
               </dd>
             </motion.div>
@@ -46,7 +46,7 @@ export default function Index() {
               <dt className="order-last text-lg font-medium text-gray-500">
                 Total Addons
               </dt>
-              <dd className="text-4xl font-extrabold text-primary md:text-5xl">
+              <dd className="text-4xl font-extrabold text-secondary md:text-5xl">
                 86
               </dd>
             </motion.div>
@@ -55,7 +55,7 @@ export default function Index() {
               <dt className="order-last text-lg font-medium text-gray-500">
                 Total Sales
               </dt>
-              <dd className="text-4xl font-extrabold text-primary md:text-5xl">
+              <dd className="text-4xl font-extrabold text-secondary md:text-5xl">
                 $4.8m
               </dd>
             </motion.div>
@@ -64,7 +64,7 @@ export default function Index() {
               <dt className="order-last text-lg font-medium text-gray-500">
                 Official Addons
               </dt>
-              <dd className="text-4xl font-extrabold text-primary md:text-5xl">
+              <dd className="text-4xl font-extrabold text-secondary md:text-5xl">
                 24
               </dd>
             </motion.div>
@@ -73,7 +73,7 @@ export default function Index() {
               <dt className="order-last text-lg font-medium text-gray-500">
                 Total Addons
               </dt>
-              <dd className="text-4xl font-extrabold text-primary md:text-5xl">
+              <dd className="text-4xl font-extrabold text-secondary md:text-5xl">
                 86
               </dd>
             </motion.div>

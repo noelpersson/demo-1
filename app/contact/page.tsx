@@ -1,6 +1,6 @@
 import Contactinfo from '@/components/Contactus/Contactinfo';
 import FormSection from '@/components/Contactus/FormSection';
-import Headerdaisy from '@/components/Contactus/Headerdaisy';
+import Headerdaisy from '@/components/Contactus/Headercontact';
 import Footer from '@/components/Footer';
 import React from 'react';
 

@@ -8,7 +8,7 @@ type Props = {};
 
 export default function page({}: Props) {
   return (
-    <main className="w-full mx-auto flex flex-col items-stretch justify-start h-full relative overflow-hidden ">
+    <main className=" w-full mx-auto flex flex-col items-stretch  overflow-hidden">
       <div className="relative max-w-[2100px] w-full mx-auto"></div>
       {/* First Section */}
       <FirstSection />
