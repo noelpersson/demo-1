@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 const Team = () => {
   return (
-    <section className="bg-secondary/50">
+    <section className="bg-secondary">
       <div className="container px-6 py-10 mx-auto">
         <h1 className="text-2xl font-semibold text-center text-gray-800 capitalize lg:text-3xl :text-white">
           Our Executive Team

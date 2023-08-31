@@ -28,9 +28,9 @@ function PageBanner() {
   }, [scrollY, controls]);
 
   return (
-  <div className="relative z-[-10] bg-black h-[500px]">
+  <div className="relative z-[-10] bg-black h-[600px]">
     <div className="container">
-      <motion.div className="banner-content sm:pt-60 xs:pt-78 relative z-10" animate={controls}>
+      <motion.div className="banner-content sm:pt-76  xs:pt-86 relative z-10" animate={controls}>
         <span className="text-[25px] px-8 leading-[29px] text-white uppercase max-w-[225px] block">
           Nordeeq
         </span>
