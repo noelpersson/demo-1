@@ -9,7 +9,7 @@ type Props = {};
 
 export default function Hero({}: Props) {
   return (
-    <div className="bg-gradient-to-t from-yellow-300 to-yellow-200">
+    <div className="bg-gradient-to-t from-[#F2B807] to-[#F29F05]">
   <section className="py-10 sm:py-16 lg:py-24">
     <div className="px-4 mx-auto max-w-8xl sm:px-6 lg:px-40">
       <div className="grid items-center grid-cols-1 gap-10 lg:grid-cols-2">
@@ -28,7 +28,7 @@ export default function Hero({}: Props) {
             <a
               href="experience"
               title=""
-              className="inline-flex items-center justify-center px-3 py-3 text-mg font-bold rounded-lg text-black transition-all duration-500 hover:text-white bg-white hover:bg-orange focus:bg-black"
+              className="inline-flex items-center justify-center px-3 py-3 text-mg font-bold rounded-lg text-black transition-all duration-500 hover:text-white bg-white hover:bg-black focus:bg-black"
               role="button"
             >              {" "}
               Vår arbetsmetod{" "}
@@ -41,10 +41,10 @@ export default function Hero({}: Props) {
         </div>
         <div>
           <Image 
-            src="https://cdn.rareblocks.xyz/collection/celebration/images/hero/2/hero-img.png" 
-            alt="Beskrivning av bilden"  // Lägg till en beskrivning här
-            width={500}  // Exempelvärde, du behöver ange rätt värde
-            height={300} // Exempelvärde, du behöver ange rätt värde
+            src="/images/03.png" 
+            alt="Beskrivning av bilden"  
+            width={500}  
+            height={300} 
             className="w-full"
           />
         </div>
