@@ -7,6 +7,7 @@ import Head from "next/head";
 import Headercopy from "@/components/Headercopy";
 import MobileNavbar from "@/components/MobileNavbar";
 import { SpeedInsights } from "@vercel/speed-insights/next"
+import { Analytics } from "@vercel/analytics/react"
 
 const mont = Montserrat({ subsets: ["latin"], display: "swap" });
 // const inter = DM_Sans({ subsets: ['latin'] })
@@ -42,6 +43,7 @@ export default function RootLayout({
         </div>
         {children}
         <SpeedInsights/>
+        <Analytics/>
       </body>
     </html>
   );
