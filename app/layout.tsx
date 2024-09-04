@@ -6,6 +6,7 @@ import NavbarBasicPreview from "@/components/navbar";
 import Head from "next/head";
 import Headercopy from "@/components/Headercopy";
 import MobileNavbar from "@/components/MobileNavbar";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const mont = Montserrat({ subsets: ["latin"], display: "swap" });
 // const inter = DM_Sans({ subsets: ['latin'] })
@@ -24,7 +25,7 @@ export default function RootLayout({
     <html lang="en" className="">
       <Head>
         {/* <!-- HTML Meta Tags --> */}
-        <title key="title">Agency</title>
+        <title key="title">Demo1</title>
         <meta content="width=device-width, initial-scale=1" name="viewport" />
         <meta name="description" content="Agency description" />
       </Head>
@@ -40,7 +41,7 @@ export default function RootLayout({
           <MobileNavbar />
         </div>
         {children}
-        
+        <SpeedInsights/>
       </body>
     </html>
   );
