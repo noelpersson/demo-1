@@ -6,7 +6,7 @@ const App: React.FC = () => {
     <div className="bg-white-300/50  backdrop-blur-sm transition-all duration-300 z-50 relative">
       <header className="container mx-auto px-4 py-6 flex items-center justify-between">
         <a href="/" className="font-bold text-black text-xl">
-          Nordeeq
+          Demo1
         </a>
         <nav>
           <ul className="flex items-center justify-center font-semibold">

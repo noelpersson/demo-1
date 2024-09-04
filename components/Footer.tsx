@@ -24,7 +24,7 @@ const Footer = () => {
 
   {/* Nedre delen av footern */}
   <div className="flex justify-between items-center">
-    <p>&copy; {new Date().getFullYear()} Nordeeq</p>
+    <p>&copy; {new Date().getFullYear()} Powered by Noel Persson</p>
 
   </div>
 </div>
