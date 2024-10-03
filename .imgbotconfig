@@ -1,0 +1,7 @@
+{
+    "schedule": "daily",
+    "aggressiveCompression": true,
+    "compressWiki": true,
+    "minKBReduced": 500,
+    "commitMessage": "Imgbot has compressed images"
+}
