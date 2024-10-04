@@ -58,7 +58,7 @@ const Navbar = () => {
         animate={isOpen ? 'open' : 'closed'}
         variants={variants}
         id="navbarCollapse"
-        className={`fixed right-0 top-[85px] z-40 w-full max-w-[290px] h-100 overflow-y-auto bg-white py-5 px-6 shadow lg:static lg:block lg:w-full lg:max-w-full lg:shadow-none ${
+        className={`fixed right-0 top-0 z-40 w-full max-w-[290px] h-full overflow-y-auto bg-white py-5 px-6 shadow lg:static lg:block lg:w-full lg:max-w-full lg:shadow-none ${
           !isOpen && 'hidden'
         }`}
       >
